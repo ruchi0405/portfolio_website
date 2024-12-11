@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest Project</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+      /* Custom styles */
+      .portfolio-item {
+          background-color: #f0f6ec;
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+      }
+
+      .portfolio-item img {
+          max-width: 100%;
+          max-height: 200px;
+          border-radius: 8px;
+          margin-bottom: 15px;
+          object-fit: cover;
+      }
+
+      .portfolio-title {
+          font-weight: bold;
+          color: #6b7b63;
+      }
+      .view-more {
+          font-size: 1.2em;
+          color: #6b7b63;
+          font-weight: 500;
+      }
+
+      /* Navbar */
+      .navbar {
+          background-color: #eaf0e2;
+          padding: 1rem;
+      }
+      .navbar-brand {
+          font-size: 1.7rem;
+          font-weight: bold;
+          color: #617a46;
+      }
+      .nav-link {
+          font-size: 1.1rem;
+          color: #4a4a4a;
+      }
+      .nav-link:hover {
+          color: #617a46;
+      }
+      .btn-talk {
+          background-color: #617a46;
+          color: white;
+          border-radius: 30px;
+          padding: 0.7rem 1.2rem;
+      }
+      .btn-talk:hover {
+          background-color: #4f613e;
+      }
+
+      /* Hero Section */
+      .hero {
+          height: 30vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+          padding-top: 30px;
+      }
+
+      .hero h1 {
+          font-size: 3rem;
+          color: #617a46;
+          margin-bottom: 10px;
+      }
+
+      .hero p {
+          font-size: 1.2rem;
+          color: #4a4a4a;
+          margin-bottom: 20px;
+      }
+
+    /* Carousel container styling */
+    .carousel-container {
+        background-color: #eaf0e2;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        width: 60%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    /* Ensure consistent image sizing */
+    .portfolio-image {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 20px; /* Adds space between image and text */
+    }
+    /* Card content styling */
+    .portfolio-item {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .portfolio-title {
+        font-size: 1.5rem;
+        color: #617a46;
+        margin-bottom: 10px;
+    }
+    .portfolio-text {
+        color: #4a4a4a;
+    }
+    .btn-custom {
+        background-color: #617a46;
+        color: white;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    .btn-custom:hover {
+        background-color: #4f613e;
+    }
+     /* Bottom CTA Section */
+     .cta-section {
+            text-align: center;
+            padding: 80px 0;
+            background-color: #eaf0e2;
+        }
+
+        .cta-section h3 {
+            font-size: 2.5rem;
+            color: #617a46;
+            margin-bottom: 20px;
+        }
+
+        .cta-section .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .cta-section .btn-cta {
+            background-color: #617a46;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .cta-section .btn-cta:hover {
+            background-color: #4f613e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #eaf0e2;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #617a46;
+        }
+
+        footer a {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #617a46;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+            }
+
+            .hero-image img {
+                max-width: 400px;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+        }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ruchita Narkhede</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="landing page.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="ABOUT ME.html">About me</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="LATEST.HTML">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="error.html">Blogs</a></li>
+        </ul>
+        <a class="btn btn-talk" href="contact.html">Let's talk</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Latest Project</h1>
+      <p>Let’s Connect and create something Amazing Together: Reach out start a Conversation About Your Project or idea Today!</p>
+    </div>
+  </section>
+ <!-- Carousel Section -->
+ <div class="carousel-container">
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <!-- Carousel Item 1 -->
+        <div class="carousel-item active">
+          <div class="portfolio-item d-flex align-items-center">
+            <img src="yale school.png" alt="User Research" class="portfolio-image img-fluid">
+            <div class="text-start">
+              <h5 class="portfolio-title">Rummy Circle</h5>
+              <p class="portfolio-text">
+                 Designed the website to present all features clearly. The navigation UI needs to be more intuitive for quick access, and improving color and text design will boost credibility and readability.
+              </p>
+              <a href="User research II.pdf" class="btn btn-custom">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Item 2 -->
+        <div class="carousel-item">
+          <div class="portfolio-item d-flex align-items-center">
+            <img src="bording pass.png" alt="Boarding pass" class="portfolio-image img-fluid">
+            <div class="text-start">
+              <h5 class="portfolio-title">Global Taste Airways Boarding Pass</h5>
+              <p class="portfolio-text">
+                 To be able to explore different cuisine food with different cultures to ensure comfort journey with healthy options.
+              </p>
+              <a href="boarding pass.pdf" class="btn btn-custom">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Item 3 -->
+        <div class="carousel-item">
+          <div class="portfolio-item d-flex align-items-center">
+            <img src="website.png" alt="Website design" class="portfolio-image img-fluid">
+            <div class="text-start">
+              <h5 class="portfolio-title">Portfolio Website Design</h5>
+              <p class="portfolio-text">
+                  To ensure that my website reflects my personal brand and design style, creating a cohesive and memorable impression.
+              </p>
+              <a href="WEBSITE PORTFOLIO.pdf" class="btn btn-custom">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (necessary for carousel functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+    <div class="container">
+        <h3>Have a project in mind? Let's get to work. 👋📧</h3>
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn-cta">Let's talk</a>
+            <a href="LATEST.HTML" class="btn-cta">My portfolio</a>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>; 2024 Ruchita Narkhede | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

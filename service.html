@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #f0f6ec; /* Matches the background color in the screenshot */
+        }
+        .card img {
+            width: 80px; /* Adjust as necessary */
+            margin-bottom: 15px;
+        }
+        .card-title {
+            font-weight: bold;
+            color: #4b634e; /* Color similar to screenshot */
+        }
+        .card-text {
+            color: #6b7b63;
+        }
+
+    .footer-buttons a {
+      margin: 10px;
+    }
+
+    /* Hero Section */
+    .hero {
+    height: 30vh; /* Reduced height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content closer to the top */
+    align-items: center;
+    text-align: center;
+    padding-top: 30px; /* Add padding at the top for a controlled offset */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #617a46;
+    margin-bottom: 10px; /* Reduced bottom margin for tighter spacing */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px; /* Reduced bottom margin */
+}
+          /* Navbar */
+.navbar {
+            background-color: #eaf0e2;
+            padding: 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #617a46;
+        }
+
+        .nav-link {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+        }
+
+        .nav-link:hover {
+            color: #617a46;
+        }
+        .btn-talk {
+            background-color: #617a46;
+            color: white;
+            border-radius: 30px;
+            padding: 0.7rem 1.2rem;
+        }
+
+        .btn-talk:hover {
+            background-color: #4f613e;
+        }
+
+    .btn-custom {
+      background-color: #f8d50b;
+      border-color: #f8d50b;
+      color: #33483d;
+      border-radius: 30px;
+      padding: 10px 20px;
+    }
+
+    .btn-custom:hover {
+      background-color: #e3b707;
+    }
+
+    .btn-secondary {
+      border-radius: 30px;
+      padding: 10px 20px;
+    }
+        
+    /* Fullscreen adjustments */
+    .container-fluid {
+      max-width: 100%;
+      padding: 20PX;
+    }
+
+    .full-height {
+      min-height: 100vh;
+    }
+
+    .row-fullscreen {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .service-title {
+      font-size: 3rem;
+      padding: 2rem 0;
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 50%;
+    }
+       
+          /* Card Animation Styles */
+          .card {
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              border: none; /* Remove default border */
+              border-radius: 15px; /* Rounded corners */
+          }
+    
+          /* Hover Effect */
+          .card:hover {
+              transform: translateY(-10px) scale(1.05); /* Scale and lift the card */
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+          }
+    
+          /* Centered image with a small bounce effect */
+          .card img {
+              width: 80px;
+              transition: transform 0.3s ease;
+          }
+    
+          /* Bounce effect on image */
+          .card:hover img {
+              transform: scale(1.1); /* Slightly enlarge the icon */
+          }
+    
+          /* Card Title Animation */
+          .card-title {
+              font-weight: bold;
+              font-size: 1.25rem;
+              color: #617a46;
+              transition: color 0.3s ease;
+          }
+    
+          .card:hover .card-title {
+              color: #4f613e; /* Change title color on hover */
+          }
+    
+          /* Card Text */
+          .card-text {
+              color: #4a4a4a;
+              transition: color 0.3s ease;
+          }
+    
+          .card:hover .card-text {
+              color: #33483d; /* Darker text color on hover */
+          }
+    
+          /* Extra Spacing for Row */
+          .row-cols-1 .col {
+              padding-top: 15px;
+              padding-bottom: 15px;
+          }         
+              /* Bottom CTA Section */
+     .cta-section {
+            text-align: center;
+            padding: 80px 0;
+            background-color: #eaf0e2;
+        }
+
+        .cta-section h3 {
+            font-size: 2.5rem;
+            color: #617a46;
+            margin-bottom: 20px;
+        }
+
+        .cta-section .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .cta-section .btn-cta {
+            background-color: #617a46;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .cta-section .btn-cta:hover {
+            background-color: #4f613e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #eaf0e2;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #617a46;
+        }
+
+        footer a {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #617a46;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+            }
+
+            .hero-image img {
+                max-width: 400px;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+        }     
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+      <a class="navbar-brand" href="#">Ruchita Narkhede</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="landing page.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="ABOUT ME.html">About me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="service.html">Service</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="LATEST.HTML">Project</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="error.html">Blogs</a>
+              </li>
+          </ul>
+          <a class="btn btn-talk" href="contact.html">Let's talk</a>
+      </div>
+  </div>
+</nav>
+<!--Hero Section -->
+      <section class="hero">
+        <div class="container">
+            <h1>Service</h1>
+            <p>Experienced UI/UX designer, intuitive, delightful digital experience let's design user centric solution that resonate and inspire.</p>
+        </div>
+        
+   
+    
+    <!-- Services Section -->
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+              <div class="card text-center">
+                  <img src="1.png" alt="UI/UX Design Icon" class="mx-auto d-block">
+                  <h5 class="card-title">UI/UX Design</h5>
+                  <p class="card-text">Experienced UI/UX designer, intuitive, delightful digital experience let's design user-centric solutions that resonate and inspire.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card text-center">
+                  <img src="2.png" alt="Web Design Icon" class="mx-auto d-block">
+                  <h5 class="card-title">Web Design</h5>
+                  <p class="card-text">Passionate web designers with two years of experience. User-centric visual captivity website. Let's create your digital masterpiece together.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card text-center">
+                  <img src="3.png" alt="User Research Icon" class="mx-auto d-block">
+                  <h5 class="card-title">User Research</h5>
+                  <p class="card-text">User-centric researcher, impactful insight to shape impactful experiences. Let's provide valuable perspectives for your project success.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card text-center">
+                  <img src="4.png" alt="Prototyping Icon" class="mx-auto d-block">
+                  <h5 class="card-title">Prototyping</h5>
+                  <p class="card-text">Transforming concepts into tangible prototypes to validate ideas. Let's transform your ideas into a stunning intuitive design.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card text-center">
+                  <img src="5.png" alt="Wireframing Icon" class="mx-auto d-block">
+                  <h5 class="card-title">Wireframing</h5>
+                  <p class="card-text">Developing detailed wireframes and high-fidelity mockups to visualize design effectively. Let's create usability wireframes and mockups.</p>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card text-center">
+                  <img src="6.png" alt="App Design Icon" class="mx-auto d-block">
+                  <h5 class="card-title">App Design</h5>
+                  <p class="card-text">Designing intuitive and user-friendly mobile applications for iOS and Android platforms. Let's create your digital masterpiece together.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Bootstrap JS (Bundle with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+ <!-- Call to Action Section -->
+<section class="cta-section">
+    <div class="container">
+        <h3>Have a project in mind? Let's get to work. 👋📧</h3>
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn-cta">Let's talk</a>
+            <a href="LATEST.HTML" class="btn-cta">My portfolio</a>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>; 2024 Ruchita Narkhede | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
